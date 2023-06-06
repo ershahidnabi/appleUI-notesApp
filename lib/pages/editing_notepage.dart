@@ -49,6 +49,7 @@ class _EditingNotePageState extends State<EditingNotePage> {
     Provider.of<NoteData>(context, listen: false).addNewNote(
       Note(id: id, text: text),
     );
+    updateNote();
   }
 
   //update existing note
